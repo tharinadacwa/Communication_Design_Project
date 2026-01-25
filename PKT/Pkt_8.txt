@@ -1,0 +1,605 @@
+<<< Welcome to GNU Radio Companion 3.10.12.0 >>>
+
+Block paths:
+	C:\Users\Subodha\AppData\Roaming\.local\state\gnuradio
+	C:\Users\Subodha\radioconda\Library\share\gnuradio\grc\blocks
+
+Loading: "C:\Users\Subodha\Desktop\3rd Semester\CDP\ACK\sender1.grc"
+>>> Done
+
+Loading: "C:\Users\Subodha\Desktop\3rd Semester\CDP\ACK\receiver1.grc"
+>>> Done
+
+Generating: "C:\Users\Subodha\Desktop\3rd Semester\CDP\ACK\receiver.py"
+
+Executing: C:\Users\Subodha\radioconda\python.exe -u C:\Users\Subodha\Desktop\3rd Semester\CDP\ACK\receiver.py
+
+
+>>> Done
+
+Generating: "C:\Users\Subodha\Desktop\3rd Semester\CDP\ACK\receiver.py"
+
+Executing: C:\Users\Subodha\radioconda\python.exe -u C:\Users\Subodha\Desktop\3rd Semester\CDP\ACK\receiver.py
+
+
+Generating: "C:\Users\Subodha\Desktop\3rd Semester\CDP\ACK\qpskk1111.py"
+
+Executing: C:\Users\Subodha\radioconda\python.exe -u C:\Users\Subodha\Desktop\3rd Semester\CDP\ACK\qpskk1111.py
+
+[FileToPDU] Sent packet #01, attempt 1
+[FileToPDU] Timeout waiting for ACK for packet #01, retrying...
+[FileToPDU] Sent packet #01, attempt 2
+[FileToPDU] Timeout waiting for ACK for packet #01, retrying...
+[FileToPDU] Sent packet #01, attempt 3
+[FileToPDU] Timeout waiting for ACK for packet #01, retrying...
+[FileToPDU] Sent packet #01, attempt 4
+[FileToPDU] Timeout waiting for ACK for packet #01, retrying...
+[FileToPDU] Sent packet #01, attempt 5
+[FileToPDU] Timeout waiting for ACK for packet #01, retrying...
+[FileToPDU] Sent packet #01, attempt 6
+[FileToPDU] Timeout waiting for ACK for packet #01, retrying...
+[FileToPDU] Sent packet #01, attempt 7
+hiiiiiiiiiiiiii
+[Deduplicator] Sent physical ACK packet 20 times: [AA 01]
+[Deduplicator] Duplicate packet #01 discarded.
+[FileToPDU] Received PHYSICAL ACK for packet #01
+[FileToPDU] Received PHYSICAL ACK for packet #01
+[FileToPDU] Received PHYSICAL ACK for packet #01
+[FileToPDU] Received PHYSICAL ACK for packet #01
+[FileToPDU] Received PHYSICAL ACK for packet #01
+[FileToPDU] Received PHYSICAL ACK for packet #01
+[FileToPDU] Received PHYSICAL ACK for packet #01
+[FileToPDU] Received PHYSICAL ACK for packet #01
+[FileToPDU] Received PHYSICAL ACK for packet #01
+[FileToPDU] Received PHYSICAL ACK for packet #01
+[FileToPDU] Received PHYSICAL ACK for packet #01
+[FileToPDU] Received PHYSICAL ACK for packet #01
+
+Loading: "C:\Users\Subodha\Desktop\3rd Semester\CDP\PKT\Pkt_8.grc"
+>>> Done
+
+Generating: "C:\Users\Subodha\Desktop\3rd Semester\CDP\PKT\pkt_8.py"
+
+Executing: C:\Users\Subodha\radioconda\python.exe -u C:\Users\Subodha\Desktop\3rd Semester\CDP\PKT\pkt_8.py
+
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+[PDU to File Writer] Saved text to C:/Users/Subodha/Desktop/3rd Semester/CDP/PKT/output.txt
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************
+***** VERBOSE PDU DEBUG PRINT ******
+()
+pdu length =          6 bytes
+pdu vector contents = 
+0000: 73 75 62 6f 64 61 
+************************************

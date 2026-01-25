@@ -28,7 +28,7 @@ options:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [216, 12.0]
+    coordinate: [176, 12.0]
     rotation: 0
     state: enabled
 
@@ -64,6 +64,18 @@ blocks:
     bus_source: false
     bus_structure: null
     coordinate: [624, 12.0]
+    rotation: 0
+    state: enabled
+- name: freq
+  id: variable
+  parameters:
+    comment: ''
+    value: 435e6
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [24, 12.0]
     rotation: 0
     state: enabled
 - name: freq_offset
@@ -827,7 +839,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1152, 252.0]
+    coordinate: [1048, 196.0]
     rotation: 0
     state: enabled
 - name: soapy_bladerf_source_0

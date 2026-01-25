@@ -1,0 +1,2751 @@
+options:
+  parameters:
+    author: BellLabz
+    catch_exceptions: 'True'
+    category: Custom
+    cmake_opt: ''
+    comment: ''
+    copyright: ''
+    description: cdp project
+    gen_cmake: 'On'
+    gen_linking: dynamic
+    generate_options: qt_gui
+    hier_block_src_path: '.:'
+    id: cdp
+    max_nouts: '0'
+    output_language: python
+    placement: (0,0)
+    qt_qss_theme: ''
+    realtime_scheduling: ''
+    run: 'True'
+    run_command: '{python} -u {filename}'
+    run_options: prompt
+    sizing_mode: fixed
+    thread_safe_setters: ''
+    title: cdp
+    window_size: (1000,1000)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [3248, 456.0]
+    rotation: 0
+    state: enabled
+
+blocks:
+- name: arity
+  id: variable
+  parameters:
+    comment: ''
+    value: '4'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2640, 84.0]
+    rotation: 0
+    state: enabled
+- name: eq_gain
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: 'controls@1: 0,1,1,1'
+    label: 'Equalizer: rate'
+    min_len: '200'
+    orient: QtCore.Qt.Horizontal
+    rangeType: float
+    start: '0.0'
+    step: '0.001'
+    stop: '0.1'
+    value: '0.01'
+    widget: slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [3008, 312.0]
+    rotation: 0
+    state: enabled
+- name: excess_bw
+  id: variable
+  parameters:
+    comment: Set Bandwidth
+    value: '.5'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2464, 28.0]
+    rotation: 0
+    state: enabled
+- name: freq_offset
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: 'controls@0: 0,1,1,1'
+    label: Frequency Offset
+    min_len: '200'
+    orient: QtCore.Qt.Horizontal
+    rangeType: float
+    start: '-0.1'
+    step: '0.001'
+    stop: '0.1'
+    value: '0'
+    widget: counter_slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [3072, 152.0]
+    rotation: 0
+    state: enabled
+- name: hdr_format
+  id: variable_header_format_default
+  parameters:
+    access_code: '1110000101011010111010001001001111100001010110101110100010010011'
+    bps: '1'
+    comment: ''
+    threshold: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2664, 420.0]
+    rotation: 0
+    state: enabled
+- name: k
+  id: variable
+  parameters:
+    comment: ''
+    value: '7'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2608, 180.0]
+    rotation: 0
+    state: enabled
+- name: nfilts
+  id: variable
+  parameters:
+    comment: ''
+    value: '32'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2592, -4.0]
+    rotation: 0
+    state: enabled
+- name: noise_volt
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: 'controls@0: 0,0,1,1'
+    label: Noise Voltage
+    min_len: '200'
+    orient: QtCore.Qt.Horizontal
+    rangeType: float
+    start: '0'
+    step: '0.01'
+    stop: '1'
+    value: '0.4'
+    widget: counter_slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [3016, 0.0]
+    rotation: 0
+    state: enabled
+- name: phase_bw
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: 'controls@1: 0,2,1,1'
+    label: 'Phase: Bandwidth'
+    min_len: '200'
+    orient: QtCore.Qt.Horizontal
+    rangeType: float
+    start: '0.0'
+    step: '0.01'
+    stop: '1.0'
+    value: 6.28/100.0
+    widget: slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [3032, 488.0]
+    rotation: 0
+    state: enabled
+- name: polys
+  id: variable
+  parameters:
+    comment: ''
+    value: '[109, 79]'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2616, 268.0]
+    rotation: 0
+    state: enabled
+- name: qpsk
+  id: variable_constellation_rect
+  parameters:
+    comment: ''
+    const_points: '[0.707+0.707j, -0.707+0.707j, -0.707-0.707j, 0.707-0.707j]'
+    imag_sect: '2'
+    precision: '8'
+    real_sect: '2'
+    rot_sym: '4'
+    soft_dec_lut: None
+    sym_map: '[0, 1, 2, 3]'
+    w_imag_sect: '1'
+    w_real_sect: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [3216, 660.0]
+    rotation: 0
+    state: enabled
+- name: rf_gain_0
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: ''
+    label: RF gain
+    min_len: '200'
+    orient: QtCore.Qt.Horizontal
+    rangeType: float
+    start: '0'
+    step: '1'
+    stop: '60'
+    value: '60'
+    widget: counter_slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [3592, 448.0]
+    rotation: 0
+    state: enabled
+- name: rrc_taps
+  id: variable
+  parameters:
+    comment: ''
+    value: firdes.root_raised_cosine(nfilts, nfilts, 1.0/float(sps), 0.35, 11*sps*nfilts)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2832, 4.0]
+    rotation: 0
+    state: enabled
+- name: samp_rate
+  id: variable
+  parameters:
+    comment: ''
+    value: 600e3
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2712, 172.0]
+    rotation: 0
+    state: enabled
+- name: samp_rate_blade
+  id: variable
+  parameters:
+    comment: ''
+    value: 600e3
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2368, 136.0]
+    rotation: 0
+    state: enabled
+- name: spr
+  id: variable
+  parameters:
+    comment: ''
+    value: '750000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2704, 20.0]
+    rotation: 0
+    state: enabled
+- name: sps
+  id: variable
+  parameters:
+    comment: Samples Per Symbol
+    value: '4'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2824, 84.0]
+    rotation: 0
+    state: enabled
+- name: time_offset
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: 'controls@0: 0,2,1,1'
+    label: Timing Offset
+    min_len: '200'
+    orient: QtCore.Qt.Horizontal
+    rangeType: float
+    start: '0.999'
+    step: '0.0001'
+    stop: '1.001'
+    value: '1.00'
+    widget: counter_slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [3552, 128.0]
+    rotation: 0
+    state: enabled
+- name: timing_loop_bw
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: 'controls@1: 0,0,1,1'
+    label: 'Time: BW'
+    min_len: '200'
+    orient: QtCore.Qt.Horizontal
+    rangeType: float
+    start: '0.0'
+    step: '0.01'
+    stop: '0.2'
+    value: 6.28/100.0
+    widget: slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [3200, 8.0]
+    rotation: 0
+    state: enabled
+- name: txbw
+  id: variable
+  parameters:
+    comment: ''
+    value: '9000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2512, 204.0]
+    rotation: 0
+    state: enabled
+- name: variable_adaptive_algorithm_0
+  id: variable_adaptive_algorithm
+  parameters:
+    comment: ''
+    cons: qpsk
+    delta: '10.0'
+    ffactor: '0.99'
+    modulus: '4'
+    step_size: '.0001'
+    type: cma
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2184, 4.0]
+    rotation: 0
+    state: enabled
+- name: variable_qtgui_entry_0
+  id: variable_qtgui_entry
+  parameters:
+    comment: ''
+    entry_signal: editingFinished
+    gui_hint: ''
+    label: ''
+    type: string
+    value: ''
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [8, 16.0]
+    rotation: 0
+    state: enabled
+- name: MTU
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: none
+    label: MTU
+    short_id: ''
+    type: intx
+    value: '1500'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2912, 180.0]
+    rotation: 0
+    state: enabled
+- name: blocks_char_to_float_0
+  id: blocks_char_to_float
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    scale: '1'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1808, 1016.0]
+    rotation: 180
+    state: enabled
+- name: blocks_multiply_const_vxx_0
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: '0.8'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [792.0, 408]
+    rotation: 90
+    state: disabled
+- name: blocks_multiply_const_vxx_0_0
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: '0.8'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [648.0, 1400]
+    rotation: 90
+    state: enabled
+- name: blocks_repack_bits_bb_1
+  id: blocks_repack_bits_bb
+  parameters:
+    affinity: ''
+    alias: ''
+    align_output: 'False'
+    comment: ''
+    endianness: gr.GR_MSB_FIRST
+    k: '1'
+    l: '8'
+    len_tag_key: '"packet_len"'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [632, 868.0]
+    rotation: 180
+    state: enabled
+- name: blocks_repack_bits_bb_1_0
+  id: blocks_repack_bits_bb
+  parameters:
+    affinity: ''
+    alias: ''
+    align_output: 'False'
+    comment: ''
+    endianness: gr.GR_MSB_FIRST
+    k: '1'
+    l: '8'
+    len_tag_key: '"packet_len"'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [488, 1844.0]
+    rotation: 180
+    state: enabled
+- name: blocks_tagged_stream_mux_0
+  id: blocks_tagged_stream_mux
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    lengthtagname: '"packet_len"'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    ninputs: '2'
+    tag_preserve_head_pos: '0'
+    type: byte
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1488, 184.0]
+    rotation: 0
+    state: enabled
+- name: blocks_tagged_stream_mux_0_0
+  id: blocks_tagged_stream_mux
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    lengthtagname: '"packet_len"'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    ninputs: '2'
+    tag_preserve_head_pos: '0'
+    type: byte
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1608, 1120.0]
+    rotation: 0
+    state: enabled
+- name: blocks_throttle2_0
+  id: blocks_throttle2
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    ignoretag: 'True'
+    limit: auto
+    maximum: '0.1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samples_per_second: samp_rate
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [880, 540.0]
+    rotation: 0
+    state: enabled
+- name: blocks_throttle2_0_0
+  id: blocks_throttle2
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    ignoretag: 'True'
+    limit: auto
+    maximum: '0.1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samples_per_second: samp_rate
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [744, 1508.0]
+    rotation: 0
+    state: enabled
+- name: blocks_unpack_k_bits_bb_0
+  id: blocks_unpack_k_bits_bb
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: unpack 2 bits per symbol into bits
+    k: '2'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1240, 856.0]
+    rotation: 180
+    state: enabled
+- name: blocks_unpack_k_bits_bb_0_0
+  id: blocks_unpack_k_bits_bb
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: unpack 2 bits per symbol into bits
+    k: '2'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1112, 1832.0]
+    rotation: 180
+    state: enabled
+- name: channels_channel_model_0
+  id: channels_channel_model
+  parameters:
+    affinity: ''
+    alias: ''
+    block_tags: 'False'
+    comment: Simulated channel
+    epsilon: time_offset
+    freq_offset: freq_offset
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    noise_voltage: noise_volt
+    seed: '0'
+    taps: '3'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1208, 496.0]
+    rotation: 0
+    state: enabled
+- name: channels_channel_model_0_0
+  id: channels_channel_model
+  parameters:
+    affinity: ''
+    alias: ''
+    block_tags: 'False'
+    comment: Simulated channel
+    epsilon: time_offset
+    freq_offset: freq_offset
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    noise_voltage: noise_volt
+    seed: '0'
+    taps: '3'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1056, 1416.0]
+    rotation: 0
+    state: enabled
+- name: controls
+  id: qtgui_tab_widget
+  parameters:
+    alias: ''
+    comment: ''
+    gui_hint: 0,0,1,2
+    label0: Channel
+    label1: Receiver
+    label10: Tab 10
+    label11: Tab 11
+    label12: Tab 12
+    label13: Tab 13
+    label14: Tab 14
+    label15: Tab 15
+    label16: Tab 16
+    label17: Tab 17
+    label18: Tab 18
+    label19: Tab 19
+    label2: Tab 2
+    label3: Tab 3
+    label4: Tab 4
+    label5: Tab 5
+    label6: Tab 6
+    label7: Tab 7
+    label8: Tab 8
+    label9: Tab 9
+    num_tabs: '2'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [3472, 364.0]
+    rotation: 0
+    state: enabled
+- name: digital_constellation_decoder_cb_0
+  id: digital_constellation_decoder_cb
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: "Decode a constellation's points from \na complex space to index of constellation\
+      \ \nsymbol based on the map of the  object."
+    constellation: qpsk
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2000, 856.0]
+    rotation: 180
+    state: enabled
+- name: digital_constellation_decoder_cb_0_0
+  id: digital_constellation_decoder_cb
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: "Decode a constellation's points from \na complex space to index of constellation\
+      \ \nsymbol based on the map of the  object."
+    constellation: qpsk
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1984, 1832.0]
+    rotation: 180
+    state: enabled
+- name: digital_constellation_modulator_0
+  id: digital_constellation_modulator
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: Modulation block
+    constellation: qpsk
+    differential: 'True'
+    excess_bw: 350e-3
+    log: 'False'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samples_per_symbol: sps
+    truncate: 'False'
+    verbose: 'False'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [504, 516.0]
+    rotation: 0
+    state: enabled
+- name: digital_constellation_modulator_0_0
+  id: digital_constellation_modulator
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: Modulation block
+    constellation: qpsk
+    differential: 'True'
+    excess_bw: '0.35'
+    log: 'False'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samples_per_symbol: sps
+    truncate: 'False'
+    verbose: 'False'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [384, 1496.0]
+    rotation: 0
+    state: enabled
+- name: digital_correlate_access_code_xx_ts_0
+  id: digital_correlate_access_code_xx_ts
+  parameters:
+    access_code: '1110000101011010111010001001001111100001010110101110100010010011'
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    tagname: '"packet_len"'
+    threshold: '2'
+    type: byte
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [872, 852.0]
+    rotation: 180
+    state: enabled
+- name: digital_correlate_access_code_xx_ts_0_0
+  id: digital_correlate_access_code_xx_ts
+  parameters:
+    access_code: '1110000101011010111010001001001111100001010110101110100010010011'
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    tagname: '"packet_len"'
+    threshold: '1'
+    type: byte
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [728, 1820.0]
+    rotation: 180
+    state: enabled
+- name: digital_costas_loop_cc_0
+  id: digital_costas_loop_cc
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: Phase and Fine Frequency Correction
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    order: arity
+    use_snr: 'False'
+    w: phase_bw
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1944, 616.0]
+    rotation: 0
+    state: enabled
+- name: digital_costas_loop_cc_0_0
+  id: digital_costas_loop_cc
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: Phase and Fine Frequency Correction
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    order: arity
+    use_snr: 'False'
+    w: phase_bw
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1960, 1504.0]
+    rotation: 0
+    state: enabled
+- name: digital_crc_append_0
+  id: digital_crc_append
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    final_xor: '0xFFFFFFFF'
+    initial_value: '0xFFFFFFFF'
+    input_reflected: 'True'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_bits: '32'
+    poly: '0x4C11DB7'
+    result_reflected: 'True'
+    skip_header_bytes: '0'
+    swap_endianness: 'False'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [488, 72.0]
+    rotation: 0
+    state: enabled
+- name: digital_diff_decoder_bb_0
+  id: digital_diff_decoder_bb
+  parameters:
+    affinity: ''
+    alias: ''
+    coding: digital.DIFF_DIFFERENTIAL
+    comment: "translate the differential coded symbols\n back to their original symbols"
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    modulus: '4'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1712, 828.0]
+    rotation: 180
+    state: enabled
+- name: digital_diff_decoder_bb_0_0
+  id: digital_diff_decoder_bb
+  parameters:
+    affinity: ''
+    alias: ''
+    coding: digital.DIFF_DIFFERENTIAL
+    comment: "translate the differential coded symbols\n back to their original symbols"
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    modulus: '4'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1560, 1828.0]
+    rotation: 180
+    state: enabled
+- name: digital_linear_equalizer_0_0
+  id: digital_linear_equalizer
+  parameters:
+    adapt_after_training: 'True'
+    affinity: ''
+    alg: variable_adaptive_algorithm_0
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_taps: '32'
+    sps: '4'
+    training_sequence: '[ ]'
+    training_start_tag: corr_est
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1808, 392.0]
+    rotation: 0
+    state: enabled
+- name: digital_linear_equalizer_0_0_0
+  id: digital_linear_equalizer
+  parameters:
+    adapt_after_training: 'True'
+    affinity: ''
+    alg: variable_adaptive_algorithm_0
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_taps: '15'
+    sps: '2'
+    training_sequence: '[ ]'
+    training_start_tag: corr_est
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1760, 1336.0]
+    rotation: 0
+    state: enabled
+- name: digital_map_bb_0
+  id: digital_map_bb
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: "convert the symbols \nfrom the differential decoder to the \noriginal\
+      \ symbols we transmitted."
+    map: '[0,1,2,3]'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1472, 848.0]
+    rotation: 180
+    state: enabled
+- name: digital_map_bb_0_0
+  id: digital_map_bb
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: "convert the symbols \nfrom the differential decoder to the \noriginal\
+      \ symbols we transmitted."
+    map: '[0,1,2,3]'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1336, 1824.0]
+    rotation: 180
+    state: enabled
+- name: digital_protocol_formatter_async_0
+  id: digital_protocol_formatter_async
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    format: hdr_format
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [936, 144.0]
+    rotation: 0
+    state: enabled
+- name: digital_protocol_formatter_async_0_0
+  id: digital_protocol_formatter_async
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    format: hdr_format
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [960, 1048.0]
+    rotation: 0
+    state: enabled
+- name: digital_symbol_sync_xx_0
+  id: digital_symbol_sync_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    constellation: digital.constellation_bpsk().base()
+    damping: '1.0'
+    loop_bw: phase_bw
+    max_dev: '1.5'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    nfilters: '32'
+    osps: '4'
+    pfb_mf_taps: rrc_taps
+    resamp_type: digital.IR_PFB_MF
+    sps: sps
+    ted_gain: '1.0'
+    ted_type: digital.TED_SIGNAL_TIMES_SLOPE_ML
+    type: cc
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1496, 480.0]
+    rotation: 0
+    state: enabled
+- name: digital_symbol_sync_xx_0_0
+  id: digital_symbol_sync_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    constellation: digital.constellation_bpsk().base()
+    damping: '1.0'
+    loop_bw: phase_bw
+    max_dev: '1.5'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    nfilters: '32'
+    osps: '2'
+    pfb_mf_taps: rrc_taps
+    resamp_type: digital.IR_PFB_MF
+    sps: sps
+    ted_gain: '1.0'
+    ted_type: digital.TED_SIGNAL_TIMES_SLOPE_ML
+    type: cc
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1400, 1412.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_0
+  id: epy_block
+  parameters:
+    _source_code: "#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\n\nimport pmt\n\
+      from gnuradio import gr\n\nclass address_add(gr.basic_block):\n    \"\"\"\n\
+      \    Block to prepend a dynamic address byte to a PDU payload.\n    \n    This\
+      \ block has no GRC parameters. It relies entirely on the 'addr_in' \n    port\
+      \ to set the destination address.\n    \"\"\"\n    def __init__(self):\n   \
+      \     gr.basic_block.__init__(\n            self,\n            name=\"address_add\"\
+      ,\n            in_sig=[],\n            out_sig=[]\n        )\n        # Default\
+      \ internal state (will be overwritten by GUI immediately)\n        self.address\
+      \ = 0x00\n        \n        # Port for the Text Payload\n        self.message_port_register_in(pmt.intern(\"\
+      in\"))\n        # Port for the Address Update\n        self.message_port_register_in(pmt.intern(\"\
+      addr_in\"))\n        \n        # Output Port\n        self.message_port_register_out(pmt.intern(\"\
+      out\"))\n        \n        # Register handlers\n        self.set_msg_handler(pmt.intern(\"\
+      in\"), self.handle_msg)\n        self.set_msg_handler(pmt.intern(\"addr_in\"\
+      ), self.handle_address_update)\n\n    def handle_address_update(self, msg):\n\
+      \        \"\"\"\n        Receives the address from the GUI (Symbol or Int) \n\
+      \        and updates the internal state.\n        \"\"\"\n        try:\n   \
+      \         # GUI sends address as a String Symbol (e.g. \"255\")\n          \
+      \  if pmt.is_symbol(msg):\n                str_val = pmt.symbol_to_string(msg)\n\
+      \                self.address = int(str_val)\n            \n            # If\
+      \ standard int/long is sent\n            elif pmt.is_integer(msg) or pmt.is_uint64(msg):\n\
+      \                self.address = pmt.to_long(msg)\n                \n       \
+      \     # print(f\"[address_add] Active Address set to: {self.address}\")\n  \
+      \              \n        except ValueError:\n            pass\n\n    def handle_msg(self,\
+      \ msg):\n        \"\"\"\n        Prepend the currently active 'self.address'\
+      \ to the message.\n        \"\"\"\n        meta = pmt.make_dict()\n        payload\
+      \ = bytearray()\n\n        # 1. Parse Input\n        if pmt.is_pair(msg):\n\
+      \            meta = pmt.car(msg)\n            payload = bytearray(pmt.u8vector_elements(pmt.cdr(msg)))\n\
+      \        elif pmt.is_symbol(msg):\n            text_data = pmt.symbol_to_string(msg)\n\
+      \            payload = bytearray(text_data, 'utf-8')\n        else:\n      \
+      \      return\n\n        # 2. Prepend Address\n        safe_addr = self.address\
+      \ & 0xFF\n        payload.insert(0, safe_addr)\n\n        # 3. Publish\n   \
+      \     out_msg = pmt.cons(meta, pmt.init_u8vector(len(payload), payload))\n \
+      \       self.message_port_pub(pmt.intern(\"out\"), out_msg)\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    _io_cache: ('address_add', 'address_add', [], [('addr_in', 'message', 1), ('in',
+      'message', 1)], [('out', 'message', 1)], "\nBlock to prepend a dynamic address
+      byte to a PDU payload.\n\nThis block has no GRC parameters. It relies entirely
+      on the 'addr_in' \nport to set the destination address.\n", [])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [768, 144.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_0_1_0
+  id: epy_block
+  parameters:
+    _source_code: "#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\n\nfrom gnuradio\
+      \ import gr\nfrom PyQt5 import QtWidgets, QtCore, QtGui\nimport sys\nimport\
+      \ pmt\nfrom datetime import datetime\n\n# ==========================================\n\
+      # 1. CUSTOM UI COMPONENTS\n# ==========================================\n\n\
+      class WallpaperScrollArea(QtWidgets.QScrollArea):\n    def __init__(self, bg_image=\"\
+      \", parent=None):\n        super().__init__(parent)\n        self.setWidgetResizable(True)\n\
+      \        self.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)\n \
+      \       self.bg_pixmap = QtGui.QPixmap(bg_image) if bg_image else None\n\n \
+      \   def paintEvent(self, event):\n        if self.bg_pixmap and not self.bg_pixmap.isNull():\n\
+      \            painter = QtGui.QPainter(self.viewport())\n            scaled_pixmap\
+      \ = self.bg_pixmap.scaled(\n                self.viewport().size(),\n      \
+      \          QtCore.Qt.KeepAspectRatioByExpanding,\n                QtCore.Qt.SmoothTransformation\n\
+      \            )\n            x = (self.viewport().width() - scaled_pixmap.width())\
+      \ // 2\n            y = (self.viewport().height() - scaled_pixmap.height())\
+      \ // 2\n            painter.drawPixmap(x, y, scaled_pixmap)\n        super().paintEvent(event)\n\
+      \n# ==========================================\n# 2. THE MAIN WINDOW (GUI LOGIC)\n\
+      # ==========================================\nclass MessengerWindow(QtWidgets.QWidget):\n\
+      \    # Signals to GR\n    send_to_gr_signal = QtCore.pyqtSignal(str)\n    addr_selected_signal\
+      \ = QtCore.pyqtSignal(str)\n\n    def __init__(self, bg_image=\"\"):\n     \
+      \   super().__init__()\n        self.setWindowTitle(\"BellLabz\")\n        self.resize(950,\
+      \ 700)\n        self.bg_image_path = bg_image\n        \n        # --- STATE\
+      \ FLAGS ---\n        self.is_waiting_for_ack = False \n        \n        # ---\
+      \ DATA STRUCTURES ---\n        self.added_addresses = set()\n        self.selected_btn\
+      \ = None \n        self.current_dest_address = None\n        \n        # Structure:\
+      \ { addr_int: {'page': widget, 'layout': box, 'scroll': area, 'btn': btn_obj,\
+      \ 'dot': dot_label} }\n        self.user_data = {} \n\n        # --- STYLES\
+      \ ---\n        self.style_btn_normal = \"\"\"\n            QPushButton {\n \
+      \               background-color: #34495e; color: #ecf0f1; border: 1px solid\
+      \ #2c3e50;\n                padding: 12px; border-radius: 6px; text-align: left;\n\
+      \            }\n            QPushButton:hover { background-color: #4b6584; }\n\
+      \            QPushButton:disabled { background-color: #2c3e50; color: #7f8c8d;\
+      \ border: 1px solid #2c3e50; }\n        \"\"\"\n        self.style_btn_selected\
+      \ = \"\"\"\n            QPushButton {\n                background-color: #27ae60;\
+      \ color: white; border: 2px solid white;\n                padding: 12px; border-radius:\
+      \ 6px; text-align: left; font-weight: bold;\n            }\n            QPushButton:disabled\
+      \ { background-color: #2ecc71; opacity: 0.7; }\n        \"\"\"\n\n        #\
+      \ --- MAIN LAYOUT ---\n        self.main_layout = QtWidgets.QHBoxLayout()\n\
+      \        self.main_layout.setContentsMargins(0, 0, 0, 0)\n        self.main_layout.setSpacing(0)\n\
+      \        self.setLayout(self.main_layout)\n\n        self._init_sidebar()\n\
+      \        self._init_right_panel()\n\n    def _init_sidebar(self):\n        self.sidebar\
+      \ = QtWidgets.QWidget()\n        self.sidebar.setFixedWidth(250)\n        self.sidebar.setStyleSheet(\"\
+      background-color: #2c3e50; border-right: 1px solid #1a252f;\")\n        layout\
+      \ = QtWidgets.QVBoxLayout(self.sidebar)\n        layout.setSpacing(10)\n\n \
+      \       header = QtWidgets.QLabel(\"CHATS\")\n        header.setStyleSheet(\"\
+      color: #95a5a6; font-weight: bold; margin-top: 10px; font-size: 14px;\")\n \
+      \       layout.addWidget(header)\n\n        # Input\n        input_con = QtWidgets.QHBoxLayout()\n\
+      \        self.addr_input = QtWidgets.QLineEdit()\n        self.addr_input.setPlaceholderText(\"\
+      ID (0-255)\")\n        self.addr_input.setStyleSheet(\"\"\"\n            QLineEdit\
+      \ { background: #ecf0f1; border: none; border-radius: 4px; padding: 8px; color:\
+      \ black; }\n            QLineEdit:disabled { background: #95a5a6; color: #555;\
+      \ }\n        \"\"\")\n        self.addr_input.setValidator(QtGui.QIntValidator(0,\
+      \ 255))\n        self.addr_input.returnPressed.connect(self.manual_add_address)\n\
+      \n        self.add_btn = QtWidgets.QPushButton(\"+\")\n        self.add_btn.setCursor(QtCore.Qt.PointingHandCursor)\n\
+      \        self.add_btn.setFixedWidth(40)\n        self.add_btn.clicked.connect(self.manual_add_address)\n\
+      \        self.add_btn.setStyleSheet(\"\"\"\n            QPushButton { background:\
+      \ #3498db; color: white; border: none; border-radius: 4px; font-weight: bold;\
+      \ }\n            QPushButton:disabled { background: #7f8c8d; }\n        \"\"\
+      \")\n        \n        input_con.addWidget(self.addr_input)\n        input_con.addWidget(self.add_btn)\n\
+      \        layout.addLayout(input_con)\n\n        layout.addWidget(self._create_separator())\n\
+      \n        # Contact List Scroll\n        self.contact_scroll = QtWidgets.QScrollArea()\n\
+      \        self.contact_scroll.setWidgetResizable(True)\n        self.contact_scroll.setStyleSheet(\"\
+      border: none; background: transparent;\")\n        \n        self.contact_container\
+      \ = QtWidgets.QWidget()\n        self.contact_layout = QtWidgets.QVBoxLayout(self.contact_container)\n\
+      \        self.contact_layout.setAlignment(QtCore.Qt.AlignTop)\n        self.contact_layout.setSpacing(5)\n\
+      \        self.contact_scroll.setWidget(self.contact_container)\n\n        layout.addWidget(self.contact_scroll)\n\
+      \        self.main_layout.addWidget(self.sidebar)\n\n    def _init_right_panel(self):\n\
+      \        right_panel = QtWidgets.QWidget()\n        layout = QtWidgets.QVBoxLayout(right_panel)\n\
+      \        layout.setContentsMargins(0, 0, 0, 0)\n        layout.setSpacing(0)\n\
+      \n        # Stack for Chat Pages\n        self.chat_stack = QtWidgets.QStackedWidget()\n\
+      \        welcome_page = QtWidgets.QLabel(\"Select a contact to start messaging\"\
+      )\n        welcome_page.setAlignment(QtCore.Qt.AlignCenter)\n        welcome_page.setStyleSheet(\"\
+      background-color: #e5ddd5; color: #888; font-size: 18px;\")\n        self.chat_stack.addWidget(welcome_page)\n\
+      \        layout.addWidget(self.chat_stack, stretch=1)\n\n        # Input Area\n\
+      \        self.input_box_wrapper = QtWidgets.QWidget()\n        self.input_box_wrapper.setStyleSheet(\"\
+      background-color: #f0f0f0; border-top: 1px solid #dcdcdc;\")\n        input_box_layout\
+      \ = QtWidgets.QHBoxLayout(self.input_box_wrapper)\n        input_box_layout.setContentsMargins(10,\
+      \ 10, 10, 10)\n        \n        self.msg_input = QtWidgets.QLineEdit()\n  \
+      \      self.msg_input.setPlaceholderText(\"Type a message...\")\n        self.msg_input.setStyleSheet(\"\
+      \"\"\n            QLineEdit { border-radius: 20px; padding: 10px 15px; background:\
+      \ white; border: 1px solid #ccc; font-size: 14px; }\n            QLineEdit:disabled\
+      \ { background-color: #e0e0e0; color: #888; }\n        \"\"\")\n        \n \
+      \       self.send_btn = QtWidgets.QPushButton(\"Send\")\n        self.send_btn.setCursor(QtCore.Qt.PointingHandCursor)\n\
+      \        self.send_btn.setStyleSheet(\"\"\"\n            QPushButton { background-color:\
+      \ #008069; color: white; border-radius: 20px; padding: 10px 20px; font-weight:\
+      \ bold; }\n            QPushButton:disabled { background-color: #95a5a6; }\n\
+      \        \"\"\")\n        \n        self.msg_input.returnPressed.connect(self.on_send_click)\n\
+      \        self.send_btn.clicked.connect(self.on_send_click)\n\n        input_box_layout.addWidget(self.msg_input)\n\
+      \        input_box_layout.addWidget(self.send_btn)\n\n        layout.addWidget(self.input_box_wrapper)\n\
+      \        self.main_layout.addWidget(right_panel)\n        \n        self.input_box_wrapper.hide()\n\
+      \n    def _create_separator(self):\n        line = QtWidgets.QFrame()\n    \
+      \    line.setFrameShape(QtWidgets.QFrame.HLine)\n        line.setStyleSheet(\"\
+      color: #3e5871;\")\n        return line\n\n    def manual_add_address(self):\n\
+      \        text = self.addr_input.text().strip()\n        if not text: return\n\
+      \        try:\n            val = int(text)\n            self.ensure_user_exists(val)\n\
+      \            # Simulate click to select logic\n            btn = self.user_data[val]['btn']\n\
+      \            self.handle_address_click(btn, val)\n            self.addr_input.clear()\n\
+      \        except ValueError:\n            pass\n\n    def ensure_user_exists(self,\
+      \ address_val):\n        \"\"\"Creates user context if it doesn't exist. Returns\
+      \ the user dict.\"\"\"\n        if address_val in self.user_data:\n        \
+      \    return self.user_data[address_val]\n\n        self.added_addresses.add(address_val)\n\
+      \n        # 1. Create Sidebar Button Widget\n        btn_widget = QtWidgets.QWidget()\n\
+      \        btn_layout = QtWidgets.QHBoxLayout(btn_widget)\n        btn_layout.setContentsMargins(0,0,0,0)\n\
+      \        \n        # The actual clickable button\n        btn = QtWidgets.QPushButton(f\"\
+      Node {address_val}\")\n        btn.setCursor(QtCore.Qt.PointingHandCursor)\n\
+      \        btn.setStyleSheet(self.style_btn_normal)\n        btn.setFixedHeight(50)\n\
+      \        \n        # Unread Dot (Overlay logic via layout)\n        # To make\
+      \ layout simple, we'll just put the dot inside the button text or next to it?\n\
+      \        # Let's use a layout approach:\n        \n        dot = QtWidgets.QLabel(\"\
+      \u25CF\") \n        dot.setStyleSheet(\"color: #f1c40f; font-size: 16px; margin-right:\
+      \ 5px;\") # Yellow dot\n        dot.setVisible(False)\n\n        # We need a\
+      \ custom widget click handling or just overlay the button\n        # Simplification:\
+      \ Connect button click. The dot is separate but we track it.\n        # Let's\
+      \ wrap btn and dot in a container? No, let's keep it simple.\n        # We will\
+      \ add dot to the HBox inside the sidebar layout item?\n        \n        # Better\
+      \ approach: Subclass QPushButton or just add dot next to it\n        container_widget\
+      \ = QtWidgets.QWidget()\n        cw_layout = QtWidgets.QHBoxLayout(container_widget)\n\
+      \        cw_layout.setContentsMargins(0,0,0,0)\n        cw_layout.setSpacing(0)\n\
+      \        \n        # Helper logic to make the whole row clickable requires event\
+      \ filter, \n        # but let's just make the button fill the space and manage\
+      \ the dot internally?\n        # Let's stick to the previous button style but\
+      \ change text color if unread?\n        # Or just append a unicode dot to text?\n\
+      \        \n        # Going with the clean layout approach:\n        # [ Button\
+      \ (Stretches) ] [ Dot (Fixed) ]\n        \n        btn.clicked.connect(lambda\
+      \ checked, b=btn, a=address_val: self.handle_address_click(b, a))\n        \n\
+      \        # Add to sidebar\n        # We need to modify style to allow dot visibility.\
+      \ \n        # Actually, let's put the dot IN the button text for simplicity\
+      \ given the constraints\n        # No, let's do it right.\n        \n      \
+      \  self.contact_layout.addWidget(btn)\n\n        # 2. Create Chat Page\n   \
+      \     new_chat_page = self._create_chat_page_widget()\n        self.chat_stack.addWidget(new_chat_page)\n\
+      \        \n        chat_layout = new_chat_page.widget().layout()\n        \n\
+      \        # Store Data\n        self.user_data[address_val] = {\n           \
+      \ \"page\": new_chat_page,\n            \"layout\": chat_layout,\n         \
+      \   \"scroll_area\": new_chat_page,\n            \"btn\": btn,\n           \
+      \ \"has_unread\": False\n        }\n        \n        return self.user_data[address_val]\n\
+      \n    def _create_chat_page_widget(self):\n        scroll = WallpaperScrollArea(bg_image=self.bg_image_path)\n\
+      \        scroll.setStyleSheet(\"border: none; background-color: #e5ddd5;\")\
+      \ \n        container = QtWidgets.QWidget()\n        layout = QtWidgets.QVBoxLayout(container)\n\
+      \        layout.setAlignment(QtCore.Qt.AlignTop)\n        scroll.setWidget(container)\n\
+      \        container.setStyleSheet(\"background: transparent;\")\n        return\
+      \ scroll\n\n    def handle_address_click(self, btn_obj, address_val):\n    \
+      \    if self.is_waiting_for_ack:\n            return\n\n        # Show input\
+      \ bar\n        if self.input_box_wrapper.isHidden():\n            self.input_box_wrapper.show()\n\
+      \n        # Update Button Styles\n        if self.selected_btn and self.selected_btn\
+      \ != btn_obj:\n            self.selected_btn.setStyleSheet(self.style_btn_normal)\n\
+      \        \n        btn_obj.setStyleSheet(self.style_btn_selected)\n        self.selected_btn\
+      \ = btn_obj\n        \n        # Clear Unread\n        if self.user_data[address_val][\"\
+      has_unread\"]:\n            self.user_data[address_val][\"has_unread\"] = False\n\
+      \            btn_obj.setText(f\"Node {address_val}\") # Remove dot from text\n\
+      \n        self.current_dest_address = address_val\n        \n        # Switch\
+      \ Stack\n        target_page = self.user_data[address_val][\"page\"]\n     \
+      \   self.chat_stack.setCurrentWidget(target_page)\n\n        # Emit Address\
+      \ Change\n        self.addr_selected_signal.emit(str(address_val))\n\n    def\
+      \ on_send_click(self):\n        if self.is_waiting_for_ack:\n            return\n\
+      \n        text = self.msg_input.text().strip()\n        if not text: return\n\
+      \        \n        if self.current_dest_address is None:\n            return\n\
+      \n        self._set_ui_busy_state(True)\n\n        user_entry = self.user_data[self.current_dest_address]\n\
+      \        \n        # Add SENT Bubble (Right side)\n        self._add_message_bubble(text,\
+      \ user_entry[\"layout\"], user_entry[\"scroll_area\"], is_sender=True)\n   \
+      \     \n        self.send_to_gr_signal.emit(text)\n        self.msg_input.clear()\n\
+      \n    @QtCore.pyqtSlot(int, str)\n    def handle_received_msg(self, src_addr,\
+      \ text):\n        \"\"\"Called when a PDU arrives from GNU Radio\"\"\"\n   \
+      \     \n        # 1. Ensure User Exists\n        user_entry = self.ensure_user_exists(src_addr)\n\
+      \        \n        # 2. Add RECEIVED Bubble (Left Side)\n        self._add_message_bubble(text,\
+      \ user_entry[\"layout\"], user_entry[\"scroll_area\"], is_sender=False)\n  \
+      \      \n        # 3. Handle Unread Logic\n        if self.current_dest_address\
+      \ != src_addr:\n            user_entry[\"has_unread\"] = True\n            #\
+      \ Simple visual indicator: Append dot to button text\n            btn = user_entry[\"\
+      btn\"]\n            if \"\u25CF\" not in btn.text():\n                btn.setText(f\"\
+      Node {src_addr} \u25CF\")\n\n    def _add_message_bubble(self, text, layout,\
+      \ scroll_area, is_sender):\n        container = QtWidgets.QWidget()\n      \
+      \  vbox = QtWidgets.QVBoxLayout(container)\n        vbox.setContentsMargins(0,0,0,0)\n\
+      \n        # Scroll for long text in bubble\n        h_scroll = QtWidgets.QScrollArea()\n\
+      \        h_scroll.setWidgetResizable(True)\n        h_scroll.setFixedHeight(60)\n\
+      \        h_scroll.setStyleSheet(\"background: transparent; border: none;\")\n\
+      \        h_scroll.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)\n\
+      \        h_scroll.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAsNeeded)\n\
+      \n        lbl = QtWidgets.QLabel(text)\n        \n        if is_sender:\n  \
+      \          # Green, Right Aligned\n            lbl.setStyleSheet(\"background-color:\
+      \ #dcf8c6; padding: 8px; border-radius: 10px; font-size: 16px; color: black;\"\
+      )\n            align = QtCore.Qt.AlignRight\n        else:\n            # White,\
+      \ Left Aligned\n            lbl.setStyleSheet(\"background-color: #ffffff; padding:\
+      \ 8px; border-radius: 10px; font-size: 16px; color: black;\")\n            align\
+      \ = QtCore.Qt.AlignLeft\n\n        h_scroll.setWidget(lbl)\n        h_scroll.setMinimumWidth(100)\n\
+      \        h_scroll.setMaximumWidth(450)\n        lbl.adjustSize()\n        h_scroll.setFixedHeight(lbl.height()\
+      \ + 25)\n\n        # Timestamp\n        ts_text = datetime.now().strftime(\"\
+      %H:%M\")\n        ts = QtWidgets.QLabel(ts_text)\n        ts.setStyleSheet(\"\
+      color: grey; font-size: 10px;\")\n        ts.setAlignment(QtCore.Qt.AlignRight\
+      \ if is_sender else QtCore.Qt.AlignLeft)\n        \n        vbox.addWidget(h_scroll)\n\
+      \        vbox.addWidget(ts)\n\n        # Horizontal Row Alignment\n        row\
+      \ = QtWidgets.QHBoxLayout()\n        if is_sender:\n            row.addStretch()\n\
+      \            row.addWidget(container)\n            self._last_message_timestamp\
+      \ = ts # Track only my sent messages for ACK\n        else:\n            row.addWidget(container)\n\
+      \            row.addStretch()\n        \n        layout.addLayout(row)\n   \
+      \     \n        # Scroll to bottom\n        QtCore.QTimer.singleShot(50, lambda:\
+      \ scroll_area.verticalScrollBar().setValue(scroll_area.verticalScrollBar().maximum()))\n\
+      \n    def _set_ui_busy_state(self, is_busy):\n        \"\"\"Disables/Enables\
+      \ INPUT, SEND BTN, SIDEBAR, and ADD BTN\"\"\"\n        self.is_waiting_for_ack\
+      \ = is_busy\n        \n        self.msg_input.setEnabled(not is_busy)\n    \
+      \    self.send_btn.setEnabled(not is_busy)\n        self.addr_input.setEnabled(not\
+      \ is_busy)\n        self.add_btn.setEnabled(not is_busy)\n\n        for addr,\
+      \ data in self.user_data.items():\n            data['btn'].setEnabled(not is_busy)\n\
+      \        \n        if is_busy:\n            self.send_btn.setText(\"Wait...\"\
+      )\n        else:\n            self.send_btn.setText(\"Send\")\n            self.msg_input.setFocus()\n\
+      \n    @QtCore.pyqtSlot(str)\n    def handle_feedback(self, feedback):\n    \
+      \    # ACK logic only applies to the last SENT message\n        if hasattr(self,\
+      \ '_last_message_timestamp') and self._last_message_timestamp:\n           \
+      \ if feedback == \"END_ACK_RECEIVED\":\n                current_text = self._last_message_timestamp.text()\n\
+      \                if \"\u2713\" not in current_text:\n                    self._last_message_timestamp.setText(current_text\
+      \ + \" \u2713\u2713\")\n                    self._last_message_timestamp.setStyleSheet(\"\
+      color: #34B7F1; font-weight: bold; font-size: 10px;\")\n            elif feedback\
+      \ == \"RETRY_LIMIT_EXCEEDED\":\n                self._last_message_timestamp.setText(\"\
+      Failed \u274C\")\n                self._last_message_timestamp.setStyleSheet(\"\
+      color: red; font-size: 10px;\")\n        \n        self._set_ui_busy_state(False)\n\
+      \n# ==========================================\n# 3. GNU RADIO BLOCK\n# ==========================================\n\
+      class GuiSignaler(QtCore.QObject):\n    feedback_signal = QtCore.pyqtSignal(str)\n\
+      \    receive_signal = QtCore.pyqtSignal(int, str) # addr, text\n\nclass messenger_gui(gr.basic_block):\n\
+      \    \"\"\"\n    Inputs: \n       'in' (PDUs from receiver)\n       'feedback'\
+      \ (ACK/NACK)\n    Outputs: \n       'out' (payload), \n       'dest_addr' (selected\
+      \ address)\n    \"\"\"\n    def __init__(self, bg_image=\"\"):\n        gr.basic_block.__init__(\n\
+      \            self,\n            name=\"Messenger GUI\",\n            in_sig=None,\n\
+      \            out_sig=None,\n        )\n\n        # Registers\n        self.message_port_register_out(pmt.intern(\"\
+      out\"))\n        self.message_port_register_out(pmt.intern(\"dest_addr\"))\n\
+      \        \n        self.message_port_register_in(pmt.intern(\"in\"))      #\
+      \ Incoming PDU\n        self.message_port_register_in(pmt.intern(\"feedback\"\
+      )) # ACKs\n\n        self.set_msg_handler(pmt.intern(\"feedback\"), self._process_feedback_msg)\n\
+      \        self.set_msg_handler(pmt.intern(\"in\"), self._process_incoming_pdu)\n\
+      \n        self.qapp = QtWidgets.QApplication.instance()\n        if not self.qapp:\n\
+      \            self.qapp = QtWidgets.QApplication(sys.argv)\n\n        self.signaler\
+      \ = GuiSignaler()\n        self.gui_window = MessengerWindow(bg_image=bg_image)\n\
+      \        \n        # Connections\n        self.signaler.feedback_signal.connect(self.gui_window.handle_feedback)\n\
+      \        self.signaler.receive_signal.connect(self.gui_window.handle_received_msg)\n\
+      \        \n        self.gui_window.send_to_gr_signal.connect(self._send_payload)\n\
+      \        self.gui_window.addr_selected_signal.connect(self._send_dest_addr)\n\
+      \n        self.gui_window.show()\n\n    def _process_feedback_msg(self, msg):\n\
+      \        try:\n            if pmt.is_symbol(msg):\n                s = pmt.symbol_to_string(msg)\n\
+      \                self.signaler.feedback_signal.emit(s)\n        except Exception:\n\
+      \            pass\n\n    def _process_incoming_pdu(self, msg):\n        \"\"\
+      \"\n        Expects PDU: Pair(Meta, u8vector).\n        Byte 0 = Sender Address.\n\
+      \        Bytes 1+ = Text.\n        \"\"\"\n        try:\n            if not\
+      \ pmt.is_pair(msg): return\n            vec = pmt.cdr(msg)\n            if not\
+      \ pmt.is_u8vector(vec): return\n            \n            data = bytearray(pmt.u8vector_elements(vec))\n\
+      \            if len(data) < 1: return\n            \n            sender_addr\
+      \ = data[0] # Byte 0\n            payload = data[1:]    # Remaining bytes\n\
+      \            \n            text = payload.decode(\"utf-8\", errors=\"ignore\"\
+      )\n            \n            # Emit to GUI\n            self.signaler.receive_signal.emit(sender_addr,\
+      \ text)\n            \n        except Exception as e:\n            print(f\"\
+      Error processing input PDU: {e}\")\n\n    def _send_payload(self, text_msg):\n\
+      \        self.message_port_pub(pmt.intern(\"out\"), pmt.string_to_symbol(text_msg))\n\
+      \n    def _send_dest_addr(self, addr_str):\n        self.message_port_pub(pmt.intern(\"\
+      dest_addr\"), pmt.string_to_symbol(addr_str))\n"
+    affinity: ''
+    alias: ''
+    bg_image: '''Networks_Telecommunications1.jpg'''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    _io_cache: '(''Messenger GUI'', ''messenger_gui'', [(''bg_image'', "''''")], [(''feedback'',
+      ''message'', 1), (''in'', ''message'', 1)], [(''dest_addr'', ''message'', 1),
+      (''out'', ''message'', 1)], "\nInputs: \n   ''in'' (PDUs from receiver)\n   ''feedback''
+      (ACK/NACK)\nOutputs: \n   ''out'' (payload), \n   ''dest_addr'' (selected address)\n",
+      [])'
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [288, 312.0]
+    rotation: 180
+    state: enabled
+- name: epy_block_2_0_0
+  id: epy_block
+  parameters:
+    _source_code: "#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\n\nimport threading\n\
+      import pmt\nimport time\nimport os\nfrom gnuradio import gr\n\nclass pdu_text_gui(gr.basic_block):\n\
+      \    \"\"\"\n    Custom block: QT GUI Message Entry -> PDU sender with Go-Back-N\
+      \ ARQ.\n    NOW SUPPORTS:\n    - sync_bits : number of random bytes transmitted\
+      \ before each retransmission.\n    - Sync burst has NO headers, NO packetization.\
+      \ It is PURE RANDOM BYTE STREAM.\n    \"\"\"\n\n    def __init__(self, wait_time=2.0,\
+      \ pkt_size=32, address=0x01,\n                 retry_limit=100, window_size=4,\
+      \ sync_bits=1000):\n\n        gr.basic_block.__init__(\n            self,\n\
+      \            name=\"GUI Text to PDU with Go-Back-N ARQ + Sync Burst\",\n   \
+      \         in_sig=[],\n            out_sig=[]\n        )\n\n        # Parameters\n\
+      \        self._timeout = float(wait_time)\n        self._pkt_size = int(pkt_size)\n\
+      \        self._address = int(address) & 0xFF\n        self._retry_limit = int(retry_limit)\n\
+      \        self._window_size = int(window_size)\n        self._sync_bits = int(sync_bits)\
+      \   # NEW PARAMETER\n\n        # Seq/ACK control\n        self._seq_id = 1\n\
+      \        self._last_ack_seq = 0\n        self._has_acks = False\n\n        #\
+      \ Register message ports\n        self.message_port_register_out(pmt.intern(\"\
+      out\"))\n        self.message_port_register_out(pmt.intern(\"feedback\"))\n\
+      \        self.message_port_register_in(pmt.intern(\"in\"))\n        self.message_port_register_in(pmt.intern(\"\
+      ack_in\"))\n\n        self.set_msg_handler(pmt.intern(\"in\"), self._process_text)\n\
+      \        self.set_msg_handler(pmt.intern(\"ack_in\"), self._process_ack)\n\n\
+      \        # Thread control\n        self._thread = None\n        self._stop_event\
+      \ = threading.Event()\n        self._lock = threading.Lock()\n\n        # Data\
+      \ buffers\n        self._text_data = b\"\"\n        self._packets = []\n   \
+      \     self._base = 0\n        self._next_to_send = 0\n        self._attempts\
+      \ = 0\n        self._end_seq_id = 0\n\n    # -------------------------------------------------\n\
+      \    # Sync Burst Sender (PURE RANDOM BYTES)\n    # -------------------------------------------------\n\
+      \    def _send_sync_burst(self):\n        if self._sync_bits <= 0:\n       \
+      \     return\n\n        # Pure random bytes, no header\n        sync_data =\
+      \ os.urandom(self._sync_bits)\n\n        vec = pmt.init_u8vector(len(sync_data),\
+      \ list(sync_data))\n        pdu = pmt.cons(pmt.PMT_NIL, vec)\n\n        print(f\"\
+      [pdu_text_gui] SYNC BURST sent ({len(sync_data)} bytes)\")\n        self.message_port_pub(pmt.intern(\"\
+      out\"), pdu)\n\n    # -------------------------------------------------\n  \
+      \  # Handle input text\n    # -------------------------------------------------\n\
+      \    def _process_text(self, msg):\n        try:\n            if pmt.is_symbol(msg):\n\
+      \                text_str = pmt.symbol_to_string(msg)\n            elif pmt.is_string(msg):\n\
+      \                text_str = pmt.string_to_string(msg)\n            else:\n \
+      \               print(\"[pdu_text_gui] Invalid PMT format\")\n             \
+      \   return\n\n            self._text_data = text_str.encode(\"utf-8\")\n\n \
+      \           if self._thread is None or not self._thread.is_alive():\n      \
+      \          self._stop_event.clear()\n                self._thread = threading.Thread(target=self._run)\n\
+      \                self._thread.daemon = True\n                self._thread.start()\n\
+      \n        except Exception as e:\n            print(f\"[pdu_text_gui] Error\
+      \ processing text: {e}\")\n\n    # -------------------------------------------------\n\
+      \    # Main ARQ loop\n    # -------------------------------------------------\n\
+      \    def _run(self):\n        raw = self._text_data\n        step = self._pkt_size\
+      \ - 2\n        blocks = [raw[i:i+step] for i in range(0, len(raw), step)]\n\n\
+      \        # Choose starting seq\n        if self._has_acks:\n            self._seq_id\
+      \ = (self._last_ack_seq + 1) & 0xFF\n            if self._seq_id == 0:\n   \
+      \             self._seq_id = 1\n        else:\n            self._seq_id = 1\n\
+      \n        print(f\"[pdu_text_gui] Starting TX at seq=0x{self._seq_id:02X}\"\
+      )\n\n        # Build packets\n        self._packets = []\n        for block\
+      \ in blocks:\n            packet = bytes([self._address, self._seq_id]) + block\n\
+      \            self._packets.append((self._seq_id, packet))\n\n            self._seq_id\
+      \ = (self._seq_id + 1) & 0xFF\n            if self._seq_id == 0:\n         \
+      \       self._seq_id = 1\n\n        # End packet\n        end_packet = bytes([self._address,\
+      \ self._seq_id])\n        self._packets.append((self._seq_id, end_packet))\n\
+      \        self._end_seq_id = self._seq_id\n\n        print(f\"[pdu_text_gui]\
+      \ END packet: seq=0x{self._seq_id:02X}\")\n\n        self._seq_id = (self._seq_id\
+      \ + 1) & 0xFF\n        if self._seq_id == 0:\n            self._seq_id = 1\n\
+      \n        # Reset window\n        self._base = 0\n        self._next_to_send\
+      \ = 0\n        self._attempts = 0\n\n        # --------------------------------------------------\n\
+      \        # ARQ LOOP\n        # --------------------------------------------------\n\
+      \        while self._base < len(self._packets) and not self._stop_event.is_set():\n\
+      \n            # Try sending packets in window\n            with self._lock:\n\
+      \                while self._next_to_send < self._base + self._window_size and\
+      \ \\\n                      self._next_to_send < len(self._packets):\n\n   \
+      \                 seq_id, packet = self._packets[self._next_to_send]\n\n   \
+      \                 vec = pmt.init_u8vector(len(packet), list(packet))\n     \
+      \               pdu = pmt.cons(pmt.PMT_NIL, vec)\n                    self.message_port_pub(pmt.intern(\"\
+      out\"), pdu)\n\n                    if len(packet) > 2:\n                  \
+      \      print(f\"[pdu_text_gui] Sent id=0x{seq_id:02X}\")\n                 \
+      \   else:\n                        print(f\"[pdu_text_gui] Sent END id=0x{seq_id:02X}\"\
+      )\n\n                    self._next_to_send += 1\n\n            # Wait for ACK\n\
+      \            time.sleep(self._timeout)\n\n            # Timeout -> Retransmit\
+      \ window\n            with self._lock:\n                if self._base < self._next_to_send:\n\
+      \n                    self._attempts += 1\n                    if self._attempts\
+      \ >= self._retry_limit:\n                        print(\"[pdu_text_gui] Retry\
+      \ limit exceeded\")\n                        self.message_port_pub(pmt.intern(\"\
+      feedback\"),\n                                              pmt.intern(\"RETRY_LIMIT_EXCEEDED\"\
+      ))\n                        self._stop_event.set()\n                       \
+      \ break\n\n                    print(\"[pdu_text_gui] TIMEOUT \u2192 Sync Burst\
+      \ + Retransmit window\")\n\n                    # \U0001F525 SEND RAW SYNC BURST\
+      \ FIRST\n                    self._send_sync_burst()\n\n                   \
+      \ # retransmit packets\n                    for i in range(self._base, self._next_to_send):\n\
+      \                        seq_id, packet = self._packets[i]\n\n             \
+      \           vec = pmt.init_u8vector(len(packet), list(packet))\n           \
+      \             pdu = pmt.cons(pmt.PMT_NIL, vec)\n                        self.message_port_pub(pmt.intern(\"\
+      out\"), pdu)\n\n                        if len(packet) > 2:\n              \
+      \              print(f\"[pdu_text_gui] Retransmit id=0x{seq_id:02X}\")\n   \
+      \                     else:\n                            print(f\"[pdu_text_gui]\
+      \ Retransmit END id=0x{seq_id:02X}\")\n\n    # -------------------------------------------------\n\
+      \    # ACK handler\n    # -------------------------------------------------\n\
+      \    def _process_ack(self, msg):\n        try:\n            payload = pmt.cdr(msg)\n\
+      \            if not pmt.is_u8vector(payload):\n                return\n\n  \
+      \          arr = bytearray(pmt.u8vector_elements(payload))\n            if len(arr)\
+      \ < 2:\n                return\n            if arr[0] != 0xAA:\n           \
+      \     return\n\n            ack_id = arr[1]\n\n            with self._lock:\n\
+      \                for i in range(self._base, self._next_to_send):\n         \
+      \           seq_id, _ = self._packets[i]\n\n                    if seq_id ==\
+      \ ack_id:\n                        self._has_acks = True\n                 \
+      \       self._last_ack_seq = ack_id\n\n                        if len(self._packets[i][1])\
+      \ > 2:\n                            print(f\"[pdu_text_gui] ACK for 0x{ack_id:02X}\"\
+      )\n                        else:\n                            print(f\"[pdu_text_gui]\
+      \ ACK END 0x{ack_id:02X}\")\n                            self.message_port_pub(pmt.intern(\"\
+      feedback\"),\n                                                  pmt.intern(\"\
+      END_ACK_RECEIVED\"))\n\n                        self._base = i + 1\n       \
+      \                 self._attempts = 0\n                        break\n\n    \
+      \    except Exception as e:\n            print(f\"[pdu_text_gui] ACK error:\
+      \ {e}\")\n\n"
+    address: '50'
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    pkt_size: '100'
+    retry_limit: '100'
+    sync_bits: 1e4
+    wait_time: '0.1'
+    window_size: '7'
+  states:
+    _io_cache: '(''GUI Text to PDU with Go-Back-N ARQ + Sync Burst'', ''pdu_text_gui'',
+      [(''wait_time'', ''2.0''), (''pkt_size'', ''32''), (''address'', ''1''), (''retry_limit'',
+      ''100''), (''window_size'', ''4''), (''sync_bits'', ''1000'')], [(''ack_in'',
+      ''message'', 1), (''in'', ''message'', 1)], [(''feedback'', ''message'', 1),
+      (''out'', ''message'', 1)], ''\nCustom block: QT GUI Message Entry -> PDU sender
+      with Go-Back-N ARQ.\nNOW SUPPORTS:\n- sync_bits : number of random bytes transmitted
+      before each retransmission.\n- Sync burst has NO headers, NO packetization.
+      It is PURE RANDOM BYTE STREAM.\n'', [])'
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [96, 120.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_3
+  id: epy_block
+  parameters:
+    _source_code: "#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\n\nimport pmt\n\
+      from gnuradio import gr\n\nclass address_check(gr.basic_block):\n    \"\"\"\n\
+      \    Block to check address and strip it if matches\n    \"\"\"\n    def __init__(self,\
+      \ my_address=0x01):\n        gr.basic_block.__init__(\n            self,\n \
+      \           name=\"address_check\",\n            in_sig=[],\n            out_sig=[]\n\
+      \        )\n        self.my_address = my_address\n        self.message_port_register_in(pmt.intern(\"\
+      in\"))\n        self.message_port_register_out(pmt.intern(\"out\"))\n      \
+      \  self.set_msg_handler(pmt.intern(\"in\"), self.handle_msg)\n\n    def handle_msg(self,\
+      \ msg):\n        if pmt.is_pair(msg):\n            meta = pmt.car(msg)\n   \
+      \         data = bytearray(pmt.u8vector_elements(pmt.cdr(msg)))\n          \
+      \  if data[0] == self.my_address:\n                # strip address\n       \
+      \         payload = data[1:]\n                out_msg = pmt.cons(meta, pmt.init_u8vector(len(payload),\
+      \ payload))\n                self.message_port_pub(pmt.intern(\"out\"), out_msg)\n\
+      \            # else drop silently\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    my_address: '10'
+  states:
+    _io_cache: ('address_check', 'address_check', [('my_address', '1')], [('in', 'message',
+      1)], [('out', 'message', 1)], '\nBlock to check address and strip it if matches\n',
+      ['my_address'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [344, 1056.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_3_0
+  id: epy_block
+  parameters:
+    _source_code: "#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\n\nimport pmt\n\
+      from gnuradio import gr\n\nclass address_check(gr.basic_block):\n    \"\"\"\n\
+      \    Block to check address and strip it if matches\n    \"\"\"\n    def __init__(self,\
+      \ my_address=0x01):\n        gr.basic_block.__init__(\n            self,\n \
+      \           name=\"address_check\",\n            in_sig=[],\n            out_sig=[]\n\
+      \        )\n        self.my_address = my_address\n        self.message_port_register_in(pmt.intern(\"\
+      in\"))\n        self.message_port_register_out(pmt.intern(\"out\"))\n      \
+      \  self.set_msg_handler(pmt.intern(\"in\"), self.handle_msg)\n\n    def handle_msg(self,\
+      \ msg):\n        if pmt.is_pair(msg):\n            meta = pmt.car(msg)\n   \
+      \         data = bytearray(pmt.u8vector_elements(pmt.cdr(msg)))\n          \
+      \  if data[0] == self.my_address:\n                # strip address\n       \
+      \         payload = data[1:]\n                out_msg = pmt.cons(meta, pmt.init_u8vector(len(payload),\
+      \ payload))\n                self.message_port_pub(pmt.intern(\"out\"), out_msg)\n\
+      \            # else drop silently\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    my_address: '50'
+  states:
+    _io_cache: ('address_check', 'address_check', [('my_address', '1')], [('in', 'message',
+      1)], [('out', 'message', 1)], '\nBlock to check address and strip it if matches\n',
+      ['my_address'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [128, 432.0]
+    rotation: 180
+    state: enabled
+- name: epy_block_4_0
+  id: epy_block
+  parameters:
+    _source_code: "#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\n\nimport pmt\n\
+      import zlib\nimport time\nimport os\nfrom gnuradio import gr\n\nclass crc_forwarder(gr.basic_block):\n\
+      \    \"\"\"\n    CRC32 Checker + Dedup + Forwarder (Message Reassembler)\n \
+      \   - Input : [sender_addr | seq_id | payload | crc32]\n    - Output: [sender_addr\
+      \ | full_message] (only when END marker)\n    - END marker = valid packet with\
+      \ empty payload\n    - Batch ACK: Sends 'sync_len' random bytes followed by\
+      \ a batch of ACKs.\n    \"\"\"\n\n    def __init__(self, retry_limit=1, ack_batch_size=5,\
+      \ sync_len=1000):\n        gr.basic_block.__init__(\n            self,\n   \
+      \         name=\"CRC32 Dedup + Forwarder\",\n            in_sig=[],\n      \
+      \      out_sig=[]\n        )\n\n        self.retry_limit = max(1, int(retry_limit))\n\
+      \        self.ack_batch_size = max(1, int(ack_batch_size))\n        self.sync_len\
+      \ = int(sync_len)  # Number of sync bytes\n        \n        self.received_ids\
+      \ = set()\n        self.buffers = {}\n        self.ack_queue = [] \n\n     \
+      \   # Ports\n        self.message_port_register_in(pmt.intern(\"in\"))\n   \
+      \     self.message_port_register_out(pmt.intern(\"out\"))\n        self.message_port_register_out(pmt.intern(\"\
+      ack_out\"))\n\n        self.set_msg_handler(pmt.intern(\"in\"), self._handle_msg)\n\
+      \n        print(f\"[CRC32] Receiver init (retries={self.retry_limit}, batch={self.ack_batch_size},\
+      \ sync_len={self.sync_len})\")\n\n    def _flush_ack_queue(self):\n        \"\
+      \"\"Sends sync bytes (if any), then flushes all queued ACKs.\"\"\"\n       \
+      \ if not self.ack_queue:\n            return\n\n        print(f\"[ACK] Batch\
+      \ threshold reached. Flushing {len(self.ack_queue)} ACKs...\")\n\n        #\
+      \ 1. Send Synchronization/Wake-up Bytes (if configured)\n        if self.sync_len\
+      \ > 0:\n            noise_data = os.urandom(self.sync_len)\n            noise_vec\
+      \ = pmt.init_u8vector(len(noise_data), list(noise_data))\n            noise_pdu\
+      \ = pmt.cons(pmt.PMT_NIL, noise_vec)\n            \n            self.message_port_pub(pmt.intern(\"\
+      ack_out\"), noise_pdu)\n            \n            # Small delay to ensure sync\
+      \ bytes clear before ACKs follow\n            time.sleep(0.01) \n\n        #\
+      \ 2. Send all queued ACKs\n        for ack_pdu in self.ack_queue:\n        \
+      \    # Respect the retry limit for every ACK in the queue\n            for i\
+      \ in range(self.retry_limit):\n                self.message_port_pub(pmt.intern(\"\
+      ack_out\"), ack_pdu)\n                # minimal sleep to prevent internal PDU\
+      \ congestion\n                time.sleep(0.005) \n        \n        # Clear\
+      \ the queue\n        self.ack_queue = []\n        print(\"[ACK] Batch flush\
+      \ complete.\")\n\n    def _handle_msg(self, msg):\n        if not pmt.is_pair(msg):\n\
+      \            return\n        vec = pmt.cdr(msg)\n        if not pmt.is_u8vector(vec):\n\
+      \            return\n\n        data = bytearray(pmt.u8vector_elements(vec))\n\
+      \        if len(data) < 6:\n            print(\"[CRC32] Frame too short\")\n\
+      \            return\n\n        sender_addr = data[0]\n        pkt_id = data[1]\n\
+      \        payload = data[2:-4]\n        recv_crc = int.from_bytes(data[-4:],\
+      \ \"big\")\n\n        calc_crc = zlib.crc32(bytes([sender_addr, pkt_id]) + payload)\
+      \ & 0xFFFFFFFF\n\n        if calc_crc != recv_crc:\n            print(f\"[CRC32]\
+      \ FAIL (Addr=0x{sender_addr:02X}, ID={pkt_id})\")\n            return\n\n  \
+      \      print(f\"[CRC32] OK (Addr=0x{sender_addr:02X}, ID={pkt_id})\")\n\n  \
+      \      # --- Build ACK & Queue It ---\n        ack_data = bytearray([sender_addr,\
+      \ 0xAA, pkt_id])\n        ack_crc = zlib.crc32(ack_data) & 0xFFFFFFFF\n    \
+      \    ack_data += ack_crc.to_bytes(4, 'big')\n\n        ack_vec = pmt.init_u8vector(len(ack_data),\
+      \ list(ack_data))\n        ack_pdu = pmt.cons(pmt.PMT_NIL, ack_vec)\n\n    \
+      \    self.ack_queue.append(ack_pdu)\n        print(f\"[ACK] Queued ({len(self.ack_queue)}/{self.ack_batch_size})\"\
+      )\n\n        # Check threshold\n        if len(self.ack_queue) >= self.ack_batch_size:\n\
+      \            self._flush_ack_queue()\n\n        # Dedup\n        if (sender_addr,\
+      \ pkt_id) in self.received_ids:\n            print(f\"[Forward] Duplicate packet\
+      \ ID={pkt_id}, ignored\")\n            return\n        self.received_ids.add((sender_addr,\
+      \ pkt_id))\n\n        # END MARKER\n        if len(payload) == 0:\n        \
+      \    if sender_addr in self.buffers and self.buffers[sender_addr]:\n       \
+      \         full_payload = b''.join(self.buffers[sender_addr])\n             \
+      \   forward_bytes = bytes([sender_addr]) + full_payload\n\n                out_vec\
+      \ = pmt.init_u8vector(len(forward_bytes), list(forward_bytes))\n           \
+      \     out_msg = pmt.cons(pmt.PMT_NIL, out_vec)\n                self.message_port_pub(pmt.intern(\"\
+      out\"), out_msg)\n\n                print(f\"[Forward] Reassembled {len(full_payload)}\
+      \ bytes\")\n\n            else:\n                print(f\"[Forward] END marker\
+      \ received but no data\")\n\n            self.buffers[sender_addr] = []\n  \
+      \          return\n\n        # Buffering\n        if sender_addr not in self.buffers:\n\
+      \            self.buffers[sender_addr] = []\n\n        self.buffers[sender_addr].append(payload)\n\
+      \        total_len = sum(len(p) for p in self.buffers[sender_addr])\n      \
+      \  print(f\"[Buffer] Addr 0x{sender_addr:02X}, ID {pkt_id}, +{len(payload)}\
+      \ bytes (total {total_len})\")\n"
+    ack_batch_size: '4'
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    retry_limit: '2'
+    sync_len: '2000'
+  states:
+    _io_cache: '(''CRC32 Dedup + Forwarder'', ''crc_forwarder'', [(''retry_limit'',
+      ''1''), (''ack_batch_size'', ''5''), (''sync_len'', ''1000'')], [(''in'', ''message'',
+      1)], [(''ack_out'', ''message'', 1), (''out'', ''message'', 1)], "\nCRC32 Checker
+      + Dedup + Forwarder (Message Reassembler)\n- Input : [sender_addr | seq_id |
+      payload | crc32]\n- Output: [sender_addr | full_message] (only when END marker)\n-
+      END marker = valid packet with empty payload\n- Batch ACK: Sends ''sync_len''
+      random bytes followed by a batch of ACKs.\n", [''ack_batch_size'', ''retry_limit'',
+      ''sync_len''])'
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [664, 1040.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_5_0
+  id: epy_block
+  parameters:
+    _source_code: "#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\nimport pmt\nfrom\
+      \ gnuradio import gr\nfrom Crypto.Cipher import AES\nfrom Crypto.Util.Padding\
+      \ import pad\n\nclass aes_encrypt(gr.basic_block):\n    \"\"\"\n    AES Encryption\
+      \ Block\n    - Encrypts PDUs using AES-128-CBC\n    - Key & IV fixed for demo\
+      \ (replace with secure exchange in real systems)\n    \"\"\"\n\n    def __init__(self,\
+      \ key=b\"1234567890abcdef\", iv=b\"abcdef1234567890\"):\n        gr.basic_block.__init__(\n\
+      \            self,\n            name=\"AES Encrypt\",\n            in_sig=[],\n\
+      \            out_sig=[]\n        )\n        self.message_port_register_in(pmt.intern(\"\
+      in\"))\n        self.message_port_register_out(pmt.intern(\"out\"))\n      \
+      \  self.set_msg_handler(pmt.intern(\"in\"), self.handle_msg)\n\n        self.key\
+      \ = key\n        self.iv = iv\n\n    def handle_msg(self, msg_pmt):\n      \
+      \  if pmt.is_pair(msg_pmt):\n            meta = pmt.car(msg_pmt)\n         \
+      \   data = bytes(pmt.u8vector_elements(pmt.cdr(msg_pmt)))\n\n            cipher\
+      \ = AES.new(self.key, AES.MODE_CBC, self.iv)\n            enc_data = cipher.encrypt(pad(data,\
+      \ AES.block_size))\n\n            out_pmt = pmt.cons(meta, pmt.init_u8vector(len(enc_data),\
+      \ list(enc_data)))\n            self.message_port_pub(pmt.intern(\"out\"), out_pmt)\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    iv: b"abcdef1234567890"
+    key: b"1234567890abcd30"
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    _io_cache: ('AES Encrypt', 'aes_encrypt', [('key', "b'1234567890abcdef'"), ('iv',
+      "b'abcdef1234567890'")], [('in', 'message', 1)], [('out', 'message', 1)], '\n    AES
+      Encryption Block\n    - Encrypts PDUs using AES-128-CBC\n    - Key & IV fixed
+      for demo (replace with secure exchange in real systems)\n    ', ['iv', 'key'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [664, 0.0]
+    rotation: 0
+    state: disabled
+- name: epy_block_6
+  id: epy_block
+  parameters:
+    _source_code: "#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\nimport pmt\nfrom\
+      \ gnuradio import gr\nfrom Cryptodome.Cipher import AES\nfrom Cryptodome.Util.Padding\
+      \ import unpad\n\nclass aes_decrypt(gr.basic_block):\n    \"\"\"\n    AES Decryption\
+      \ Block\n    - Decrypts PDUs using AES-128-CBC\n    - Must use the same Key\
+      \ & IV as the Encrypt block\n    \"\"\"\n\n    def __init__(self, key=b\"1234567890abcdef\"\
+      , iv=b\"abcdef1234567890\"):\n        gr.basic_block.__init__(\n           \
+      \ self,\n            name=\"AES Decrypt\",\n            in_sig=[],\n       \
+      \     out_sig=[]\n        )\n        self.message_port_register_in(pmt.intern(\"\
+      in\"))\n        self.message_port_register_out(pmt.intern(\"out\"))\n      \
+      \  self.set_msg_handler(pmt.intern(\"in\"), self.handle_msg)\n\n        self.key\
+      \ = key\n        self.iv = iv\n\n    def handle_msg(self, msg_pmt):\n      \
+      \  if pmt.is_pair(msg_pmt):\n            meta = pmt.car(msg_pmt)\n         \
+      \   data = bytes(pmt.u8vector_elements(pmt.cdr(msg_pmt)))\n\n            cipher\
+      \ = AES.new(self.key, AES.MODE_CBC, self.iv)\n            dec_data = unpad(cipher.decrypt(data),\
+      \ AES.block_size)\n\n            out_pmt = pmt.cons(meta, pmt.init_u8vector(len(dec_data),\
+      \ list(dec_data)))\n            self.message_port_pub(pmt.intern(\"out\"), out_pmt)\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    iv: b"abcdef1234567890"
+    key: b"1234567890abcd30"
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    _io_cache: ('AES Decrypt', 'aes_decrypt', [('key', "b'1234567890abcdef'"), ('iv',
+      "b'abcdef1234567890'")], [('in', 'message', 1)], [('out', 'message', 1)], '\nAES
+      Decryption Block\n- Decrypts PDUs using AES-128-CBC\n- Must use the same Key
+      & IV as the Encrypt block\n', ['iv', 'key'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [480, 1128.0]
+    rotation: 0
+    state: disabled
+- name: pdu_pdu_to_tagged_stream_0
+  id: pdu_pdu_to_tagged_stream
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: Header
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    tag: packet_len
+    type: byte
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1184, 88.0]
+    rotation: 0
+    state: enabled
+- name: pdu_pdu_to_tagged_stream_0_0
+  id: pdu_pdu_to_tagged_stream
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: Payload
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    tag: packet_len
+    type: byte
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1216, 232.0]
+    rotation: 0
+    state: enabled
+- name: pdu_pdu_to_tagged_stream_0_0_0
+  id: pdu_pdu_to_tagged_stream
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: Payload
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    tag: packet_len
+    type: byte
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1232, 1176.0]
+    rotation: 0
+    state: true
+- name: pdu_pdu_to_tagged_stream_0_1
+  id: pdu_pdu_to_tagged_stream
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: Header
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    tag: packet_len
+    type: byte
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1280, 1080.0]
+    rotation: 0
+    state: true
+- name: pdu_tagged_stream_to_pdu_0
+  id: pdu_tagged_stream_to_pdu
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    tag: packet_len
+    type: byte
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [144, 960.0]
+    rotation: 0
+    state: enabled
+- name: pdu_tagged_stream_to_pdu_0_0
+  id: pdu_tagged_stream_to_pdu
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    tag: packet_len
+    type: byte
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [344, 432.0]
+    rotation: 180
+    state: enabled
+- name: qtgui_const_sink_x_0
+  id: qtgui_const_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    axislabels: 'True'
+    color1: '"blue"'
+    color10: '"red"'
+    color2: '"red"'
+    color3: '"red"'
+    color4: '"red"'
+    color5: '"red"'
+    color6: '"red"'
+    color7: '"red"'
+    color8: '"red"'
+    color9: '"red"'
+    comment: ''
+    grid: 'False'
+    gui_hint: 'received@0: 0,0,1,1'
+    label1: ''
+    label10: ''
+    label2: ''
+    label3: ''
+    label4: ''
+    label5: ''
+    label6: ''
+    label7: ''
+    label8: ''
+    label9: ''
+    legend: 'True'
+    marker1: '0'
+    marker10: '0'
+    marker2: '0'
+    marker3: '0'
+    marker4: '0'
+    marker5: '0'
+    marker6: '0'
+    marker7: '0'
+    marker8: '0'
+    marker9: '0'
+    name: '""'
+    nconnections: '1'
+    size: '1024'
+    style1: '0'
+    style10: '0'
+    style2: '0'
+    style3: '0'
+    style4: '0'
+    style5: '0'
+    style6: '0'
+    style7: '0'
+    style8: '0'
+    style9: '0'
+    tr_chan: '0'
+    tr_level: '0.0'
+    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_slope: qtgui.TRIG_SLOPE_POS
+    tr_tag: '""'
+    type: complex
+    update_time: '0.10'
+    width1: '1'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    xmax: '2'
+    xmin: '-2'
+    ymax: '2'
+    ymin: '-2'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2032, 532.0]
+    rotation: 180
+    state: enabled
+- name: qtgui_const_sink_x_0_0
+  id: qtgui_const_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    axislabels: 'True'
+    color1: '"blue"'
+    color10: '"red"'
+    color2: '"red"'
+    color3: '"red"'
+    color4: '"red"'
+    color5: '"red"'
+    color6: '"red"'
+    color7: '"red"'
+    color8: '"red"'
+    color9: '"red"'
+    comment: ''
+    grid: 'False'
+    gui_hint: 'received@0: 0,1,1,1'
+    label1: ''
+    label10: ''
+    label2: ''
+    label3: ''
+    label4: ''
+    label5: ''
+    label6: ''
+    label7: ''
+    label8: ''
+    label9: ''
+    legend: 'True'
+    marker1: '0'
+    marker10: '0'
+    marker2: '0'
+    marker3: '0'
+    marker4: '0'
+    marker5: '0'
+    marker6: '0'
+    marker7: '0'
+    marker8: '0'
+    marker9: '0'
+    name: '""'
+    nconnections: '1'
+    size: '1024'
+    style1: '0'
+    style10: '0'
+    style2: '0'
+    style3: '0'
+    style4: '0'
+    style5: '0'
+    style6: '0'
+    style7: '0'
+    style8: '0'
+    style9: '0'
+    tr_chan: '0'
+    tr_level: '0.0'
+    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_slope: qtgui.TRIG_SLOPE_POS
+    tr_tag: '""'
+    type: complex
+    update_time: '0.10'
+    width1: '1'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    xmax: '2'
+    xmin: '-2'
+    ymax: '2'
+    ymin: '-2'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2304, 1496.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_freq_sink_x_0
+  id: qtgui_freq_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    average: '1.0'
+    axislabels: 'True'
+    bw: samp_rate
+    color1: '"blue"'
+    color10: '"dark blue"'
+    color2: '"red"'
+    color3: '"green"'
+    color4: '"black"'
+    color5: '"cyan"'
+    color6: '"magenta"'
+    color7: '"yellow"'
+    color8: '"dark red"'
+    color9: '"dark green"'
+    comment: Frequency Spectrum of Tx
+    ctrlpanel: 'False'
+    fc: '0'
+    fftsize: '1024'
+    freqhalf: 'True'
+    grid: 'False'
+    gui_hint: ''
+    label: Relative Gain
+    label1: ''
+    label10: ''''''
+    label2: ''''''
+    label3: ''''''
+    label4: ''''''
+    label5: ''''''
+    label6: ''''''
+    label7: ''''''
+    label8: ''''''
+    label9: ''''''
+    legend: 'True'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: TX - Spectrum
+    nconnections: '1'
+    norm_window: 'False'
+    showports: 'False'
+    tr_chan: '0'
+    tr_level: '0.0'
+    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_tag: '""'
+    type: complex
+    units: dB
+    update_time: '0.10'
+    width1: '1'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    wintype: window.WIN_BLACKMAN_hARRIS
+    ymax: '10'
+    ymin: '-140'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [784, 676.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_freq_sink_x_0_0
+  id: qtgui_freq_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    average: '0.05'
+    axislabels: 'True'
+    bw: samp_rate
+    color1: '"blue"'
+    color10: '"dark blue"'
+    color2: '"red"'
+    color3: '"green"'
+    color4: '"black"'
+    color5: '"cyan"'
+    color6: '"magenta"'
+    color7: '"yellow"'
+    color8: '"dark red"'
+    color9: '"dark green"'
+    comment: Frequency Spectrum of Tx ACK
+    ctrlpanel: 'False'
+    fc: '0'
+    fftsize: '1024'
+    freqhalf: 'True'
+    grid: 'False'
+    gui_hint: ''
+    label: Relative Gain
+    label1: ''
+    label10: ''''''
+    label2: ''''''
+    label3: ''''''
+    label4: ''''''
+    label5: ''''''
+    label6: ''''''
+    label7: ''''''
+    label8: ''''''
+    label9: ''''''
+    legend: 'True'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: TX - Spectrum of ACK
+    nconnections: '1'
+    norm_window: 'False'
+    showports: 'False'
+    tr_chan: '0'
+    tr_level: '0.0'
+    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_tag: '""'
+    type: complex
+    units: dB
+    update_time: '0.10'
+    width1: '1'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    wintype: window.WIN_BLACKMAN_hARRIS
+    ymax: '10'
+    ymin: '-140'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [648, 1652.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_freq_sink_x_1
+  id: qtgui_freq_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    average: '1.0'
+    axislabels: 'True'
+    bw: samp_rate
+    color1: '"blue"'
+    color10: '"dark blue"'
+    color2: '"red"'
+    color3: '"green"'
+    color4: '"black"'
+    color5: '"cyan"'
+    color6: '"magenta"'
+    color7: '"yellow"'
+    color8: '"dark red"'
+    color9: '"dark green"'
+    comment: ''
+    ctrlpanel: 'False'
+    fc: '0'
+    fftsize: '1024'
+    freqhalf: 'True'
+    grid: 'False'
+    gui_hint: ''
+    label: Relative Gain
+    label1: ''
+    label10: ''''''
+    label2: ''''''
+    label3: ''''''
+    label4: ''''''
+    label5: ''''''
+    label6: ''''''
+    label7: ''''''
+    label8: ''''''
+    label9: ''''''
+    legend: 'True'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: RX-SPECTRUM
+    nconnections: '1'
+    norm_window: 'False'
+    showports: 'False'
+    tr_chan: '0'
+    tr_level: '0.0'
+    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_tag: '""'
+    type: complex
+    units: dB
+    update_time: '0.10'
+    width1: '1'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    wintype: window.WIN_BLACKMAN_hARRIS
+    ymax: '10'
+    ymin: '-140'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1520, 300.0]
+    rotation: 0
+    state: disabled
+- name: qtgui_freq_sink_x_1_0
+  id: qtgui_freq_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    average: '1.0'
+    axislabels: 'True'
+    bw: samp_rate
+    color1: '"blue"'
+    color10: '"dark blue"'
+    color2: '"red"'
+    color3: '"green"'
+    color4: '"black"'
+    color5: '"cyan"'
+    color6: '"magenta"'
+    color7: '"yellow"'
+    color8: '"dark red"'
+    color9: '"dark green"'
+    comment: ''
+    ctrlpanel: 'False'
+    fc: '0'
+    fftsize: '256'
+    freqhalf: 'True'
+    grid: 'False'
+    gui_hint: ''
+    label: Relative Gain
+    label1: ''
+    label10: ''''''
+    label2: ''''''
+    label3: ''''''
+    label4: ''''''
+    label5: ''''''
+    label6: ''''''
+    label7: ''''''
+    label8: ''''''
+    label9: ''''''
+    legend: 'True'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: RX-SPECTRUM of ACK
+    nconnections: '1'
+    norm_window: 'False'
+    showports: 'False'
+    tr_chan: '0'
+    tr_level: '0.0'
+    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_tag: '""'
+    type: complex
+    units: dB
+    update_time: '0.10'
+    width1: '1'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    wintype: window.WIN_BLACKMAN_hARRIS
+    ymax: '10'
+    ymin: '-140'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1336, 1696.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_time_sink_x_0
+  id: qtgui_time_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    axislabels: 'True'
+    color1: blue
+    color10: dark blue
+    color2: red
+    color3: green
+    color4: black
+    color5: cyan
+    color6: magenta
+    color7: yellow
+    color8: dark red
+    color9: dark green
+    comment: ''
+    ctrlpanel: 'False'
+    entags: 'True'
+    grid: 'False'
+    gui_hint: 'received@1: 0,0,1,1'
+    label1: Symbols
+    label10: ''
+    label2: ''
+    label3: ''
+    label4: ''
+    label5: ''
+    label6: ''
+    label7: ''
+    label8: ''
+    label9: ''
+    legend: 'True'
+    marker1: '-1'
+    marker10: '-1'
+    marker2: '-1'
+    marker3: '-1'
+    marker4: '-1'
+    marker5: '-1'
+    marker6: '-1'
+    marker7: '-1'
+    marker8: '-1'
+    marker9: '-1'
+    name: ''
+    nconnections: '1'
+    size: '500'
+    srate: samp_rate
+    stemplot: 'False'
+    style1: '1'
+    style10: '1'
+    style2: '1'
+    style3: '1'
+    style4: '1'
+    style5: '1'
+    style6: '1'
+    style7: '1'
+    style8: '1'
+    style9: '1'
+    tr_chan: '0'
+    tr_delay: '0'
+    tr_level: '0.0'
+    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_slope: qtgui.TRIG_SLOPE_POS
+    tr_tag: '""'
+    type: float
+    update_time: '0.10'
+    width1: '1'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    ylabel: Amplitude
+    ymax: '4'
+    ymin: '-1'
+    yunit: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1568, 996.0]
+    rotation: 180
+    state: enabled
+- name: received
+  id: qtgui_tab_widget
+  parameters:
+    alias: ''
+    comment: ''
+    gui_hint: 2,0,1,1
+    label0: Constellation
+    label1: Symbols
+    label10: Tab 10
+    label11: Tab 11
+    label12: Tab 12
+    label13: Tab 13
+    label14: Tab 14
+    label15: Tab 15
+    label16: Tab 16
+    label17: Tab 17
+    label18: Tab 18
+    label19: Tab 19
+    label2: Tab 2
+    label3: Tab 3
+    label4: Tab 4
+    label5: Tab 5
+    label6: Tab 6
+    label7: Tab 7
+    label8: Tab 8
+    label9: Tab 9
+    num_tabs: '2'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [3432, 468.0]
+    rotation: 0
+    state: enabled
+- name: soapy_bladerf_sink_0
+  id: soapy_bladerf_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    bandwidth: '10000'
+    center_freq: 2.4e9
+    comment: ''
+    dev_args: ''
+    freq_correction: '0'
+    gain: '50'
+    samp_rate: samp_rate_blade*2
+    type: fc32
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [816, 240.0]
+    rotation: 0
+    state: disabled
+- name: soapy_bladerf_sink_0_0
+  id: soapy_bladerf_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    bandwidth: '10000'
+    center_freq: 2.48e9
+    comment: ''
+    dev_args: ''
+    freq_correction: '0'
+    gain: 50e3
+    samp_rate: samp_rate_blade*2
+    type: fc32
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [768, 1324.0]
+    rotation: 0
+    state: enabled
+- name: soapy_bladerf_source_0
+  id: soapy_bladerf_source
+  parameters:
+    affinity: ''
+    alias: ''
+    bandwidth: '10000'
+    center_freq: 2.4e9
+    comment: ''
+    dev_args: ''
+    freq_correction: '0'
+    gain: '30.0'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samp_rate: samp_rate*2
+    type: fc32
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1200, 364.0]
+    rotation: 0
+    state: disabled
+- name: soapy_bladerf_source_0_0
+  id: soapy_bladerf_source
+  parameters:
+    affinity: ''
+    alias: ''
+    bandwidth: '10000'
+    center_freq: 2.48e9
+    comment: ''
+    dev_args: ''
+    freq_correction: '0'
+    gain: '50.0'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samp_rate: samp_rate*2
+    type: fc32
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1080, 1624.0]
+    rotation: 0
+    state: disabled
+- name: virtual_sink_0
+  id: virtual_sink
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: out
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [448, 872.0]
+    rotation: 180
+    state: enabled
+- name: virtual_sink_0_0
+  id: virtual_sink
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: channel_tx
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1712, 200.0]
+    rotation: 0
+    state: enabled
+- name: virtual_sink_1
+  id: virtual_sink
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: ACK
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [280, 1856.0]
+    rotation: 180
+    state: enabled
+- name: virtual_sink_2
+  id: virtual_sink
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: gui
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [968, 1176.0]
+    rotation: 0
+    state: enabled
+- name: virtual_source_0
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: channel_tx
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [8, 548.0]
+    rotation: 0
+    state: enabled
+- name: virtual_source_1
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: out
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [0, 1032.0]
+    rotation: 0
+    state: enabled
+- name: virtual_source_2
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: ACK
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [600, 360.0]
+    rotation: 180
+    state: enabled
+- name: virtual_source_3
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: gui
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [592, 296.0]
+    rotation: 180
+    state: enabled
+
+connections:
+- [blocks_char_to_float_0, '0', qtgui_time_sink_x_0, '0']
+- [blocks_multiply_const_vxx_0, '0', soapy_bladerf_sink_0, '0']
+- [blocks_multiply_const_vxx_0_0, '0', soapy_bladerf_sink_0_0, '0']
+- [blocks_repack_bits_bb_1, '0', virtual_sink_0, '0']
+- [blocks_repack_bits_bb_1_0, '0', virtual_sink_1, '0']
+- [blocks_tagged_stream_mux_0, '0', virtual_sink_0_0, '0']
+- [blocks_tagged_stream_mux_0_0, '0', digital_constellation_modulator_0_0, '0']
+- [blocks_throttle2_0, '0', channels_channel_model_0, '0']
+- [blocks_throttle2_0_0, '0', channels_channel_model_0_0, '0']
+- [blocks_unpack_k_bits_bb_0, '0', digital_correlate_access_code_xx_ts_0, '0']
+- [blocks_unpack_k_bits_bb_0_0, '0', digital_correlate_access_code_xx_ts_0_0, '0']
+- [channels_channel_model_0, '0', digital_symbol_sync_xx_0, '0']
+- [channels_channel_model_0, '0', qtgui_freq_sink_x_1, '0']
+- [channels_channel_model_0_0, '0', digital_symbol_sync_xx_0_0, '0']
+- [channels_channel_model_0_0, '0', qtgui_freq_sink_x_1_0, '0']
+- [digital_constellation_decoder_cb_0, '0', blocks_char_to_float_0, '0']
+- [digital_constellation_decoder_cb_0, '0', digital_diff_decoder_bb_0, '0']
+- [digital_constellation_decoder_cb_0_0, '0', digital_diff_decoder_bb_0_0, '0']
+- [digital_constellation_modulator_0, '0', blocks_multiply_const_vxx_0, '0']
+- [digital_constellation_modulator_0, '0', blocks_throttle2_0, '0']
+- [digital_constellation_modulator_0, '0', qtgui_freq_sink_x_0, '0']
+- [digital_constellation_modulator_0_0, '0', blocks_multiply_const_vxx_0_0, '0']
+- [digital_constellation_modulator_0_0, '0', blocks_throttle2_0_0, '0']
+- [digital_constellation_modulator_0_0, '0', qtgui_freq_sink_x_0_0, '0']
+- [digital_correlate_access_code_xx_ts_0, '0', blocks_repack_bits_bb_1, '0']
+- [digital_correlate_access_code_xx_ts_0_0, '0', blocks_repack_bits_bb_1_0, '0']
+- [digital_costas_loop_cc_0, '0', digital_constellation_decoder_cb_0, '0']
+- [digital_costas_loop_cc_0, '0', qtgui_const_sink_x_0, '0']
+- [digital_costas_loop_cc_0_0, '0', digital_constellation_decoder_cb_0_0, '0']
+- [digital_costas_loop_cc_0_0, '0', qtgui_const_sink_x_0_0, '0']
+- [digital_crc_append_0, out, epy_block_0, in]
+- [digital_crc_append_0, out, epy_block_5_0, in]
+- [digital_diff_decoder_bb_0, '0', digital_map_bb_0, '0']
+- [digital_diff_decoder_bb_0_0, '0', digital_map_bb_0_0, '0']
+- [digital_linear_equalizer_0_0, '0', digital_costas_loop_cc_0, '0']
+- [digital_linear_equalizer_0_0_0, '0', digital_costas_loop_cc_0_0, '0']
+- [digital_map_bb_0, '0', blocks_unpack_k_bits_bb_0, '0']
+- [digital_map_bb_0_0, '0', blocks_unpack_k_bits_bb_0_0, '0']
+- [digital_protocol_formatter_async_0, header, pdu_pdu_to_tagged_stream_0, pdus]
+- [digital_protocol_formatter_async_0, payload, pdu_pdu_to_tagged_stream_0_0, pdus]
+- [digital_protocol_formatter_async_0_0, header, pdu_pdu_to_tagged_stream_0_1, pdus]
+- [digital_protocol_formatter_async_0_0, payload, pdu_pdu_to_tagged_stream_0_0_0,
+  pdus]
+- [digital_symbol_sync_xx_0, '0', digital_linear_equalizer_0_0, '0']
+- [digital_symbol_sync_xx_0_0, '0', digital_linear_equalizer_0_0_0, '0']
+- [epy_block_0, out, digital_protocol_formatter_async_0, in]
+- [epy_block_0_1_0, dest_addr, epy_block_0, addr_in]
+- [epy_block_0_1_0, out, epy_block_2_0_0, in]
+- [epy_block_2_0_0, feedback, epy_block_0_1_0, feedback]
+- [epy_block_2_0_0, out, digital_crc_append_0, in]
+- [epy_block_3, out, epy_block_4_0, in]
+- [epy_block_3, out, epy_block_6, in]
+- [epy_block_3_0, out, epy_block_2_0_0, ack_in]
+- [epy_block_4_0, ack_out, digital_protocol_formatter_async_0_0, in]
+- [epy_block_4_0, out, virtual_sink_2, '0']
+- [epy_block_5_0, out, epy_block_0, in]
+- [epy_block_6, out, epy_block_4_0, in]
+- [pdu_pdu_to_tagged_stream_0, '0', blocks_tagged_stream_mux_0, '0']
+- [pdu_pdu_to_tagged_stream_0_0, '0', blocks_tagged_stream_mux_0, '1']
+- [pdu_pdu_to_tagged_stream_0_0_0, '0', blocks_tagged_stream_mux_0_0, '1']
+- [pdu_pdu_to_tagged_stream_0_1, '0', blocks_tagged_stream_mux_0_0, '0']
+- [pdu_tagged_stream_to_pdu_0, pdus, epy_block_3, in]
+- [pdu_tagged_stream_to_pdu_0_0, pdus, epy_block_3_0, in]
+- [soapy_bladerf_source_0, '0', digital_symbol_sync_xx_0, '0']
+- [soapy_bladerf_source_0, '0', qtgui_freq_sink_x_1, '0']
+- [soapy_bladerf_source_0_0, '0', digital_symbol_sync_xx_0_0, '0']
+- [soapy_bladerf_source_0_0, '0', qtgui_freq_sink_x_1_0, '0']
+- [virtual_source_0, '0', digital_constellation_modulator_0, '0']
+- [virtual_source_1, '0', pdu_tagged_stream_to_pdu_0, '0']
+- [virtual_source_2, '0', pdu_tagged_stream_to_pdu_0_0, '0']
+- [virtual_source_3, '0', epy_block_0_1_0, in]
+
+metadata:
+  file_format: 1
+  grc_version: 3.10.12.0
